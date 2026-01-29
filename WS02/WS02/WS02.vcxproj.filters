@@ -18,22 +18,28 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="cstr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="io.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ioTester.cpp">
+    <ClCompile Include="sensorAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="cstr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="io.h">
+    <ClInclude Include="sensorAnalysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sensor_readings.txt" />
   </ItemGroup>
 </Project>
