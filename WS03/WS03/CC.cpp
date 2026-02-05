@@ -78,10 +78,12 @@ namespace seneca {
         unsigned long long p4 = r2 % 10000ull;
 
         cout << p1 << ' ';
+		cout.setf(ios::right);
         cout.width(4); cout.fill('0'); cout << p2 << ' ';
         cout.width(4); cout.fill('0'); cout << p3 << ' ';
         cout.width(4); cout.fill('0'); cout << p4;
         cout.fill(' ');
+		cout.unsetf(ios::right);
     }
 
     void CC::set() {
