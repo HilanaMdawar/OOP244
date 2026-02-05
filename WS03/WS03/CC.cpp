@@ -12,6 +12,7 @@
 *
 * I have done all the coding by myself and only copied the code that my professor
 * provided to complete my workshops and assignments.
+* ai eas uesd in this file 
 *
 **************************************************************************************/
 
@@ -76,7 +77,7 @@ namespace seneca {
         unsigned long long r2 = r1 % 100000000ull;
         unsigned long long p3 = r2 / 10000ull;
         unsigned long long p4 = r2 % 10000ull;
-
+		// ai jelped with this part, thanks ai!
         cout << p1 << ' ';
 		cout.setf(ios::right);
         cout.width(4); cout.fill('0'); cout << p2 << ' ';
