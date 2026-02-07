@@ -1,0 +1,11 @@
+**Workshop 3 – Reflection**
+
+In this workshop, I was able to design and implement a class that manages dynamic memory while maintaining a safe empty state. Working with the `CC` class helped me better understand encapsulation, particularly why data members should be private and only accessed through well-defined member functions. I also gained a clearer understanding of the roles of constructors and destructors in properly initializing and cleaning up resources.
+
+Implementing the `aloCopy` and `deallocate` functions strengthened my understanding of dynamic memory allocation, deep copying, and why careful memory management is essential in C++. I learned how to centralize validation logic within a class to prevent invalid data from being stored. Writing the `validate` function allowed me to practice using logical conditions to enforce constraints on input data.
+
+I also learned more about formatted output through the provided `display` function and how private helper methods can work together with public member functions to produce the correct output. This helped me see how class design supports both functionality and readability.
+
+One of the main challenges I faced was correctly handling memory allocation and deallocation to avoid memory leaks or crashes. I also found it difficult to match the exact formatting of the expected output, which required careful attention to spacing and alignment.
+
+Overall, this workshop improved my understanding of resource management and class design, both of which are fundamental concepts in object-oriented programming. In future workshops, I would appreciate more detailed examples on memory management and debugging techniques to further strengthen these skills.
