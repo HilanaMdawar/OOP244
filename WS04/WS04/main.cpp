@@ -177,6 +177,8 @@ void displayRawAccountNumber(const Account* acc, int num) {
 void displayRawBalances(const Account* acc, int num) {
     cout << "Display raw balances of the accounts: " << endl;
     cout << " using double conversion operator" << endl;
+    cout.setf(ios::fixed);
+    cout.precision(2);
     for (int i = 0; i < num; i++) {
         cout << double(acc[i]) << " ";
     }
