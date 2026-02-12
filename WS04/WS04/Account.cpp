@@ -17,7 +17,7 @@
 * as I was having difficulty adjusting the spacing and column widths correctly.
 * All logic and functionality were written and understood by me.
 
-**************************************************************************************/
+*******************************************************************************************/
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
