@@ -67,6 +67,8 @@ namespace seneca {
 
     std::ostream& Account::display() const {
         using namespace std;
+        cout.setf(ios::fixed);
+			cout.precision(2);
 
         const int NAME_W = 31;   
         const int ACC_W = 5;    
