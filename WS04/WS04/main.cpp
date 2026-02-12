@@ -1,19 +1,3 @@
-
-/*************************************************************************************
-* OOP244 - 2261
-*
-* Student Name : Hilana Mdawar
-* Student Email : hdawar@myseneca.ca
-* Workshop #  :
-* Course/Section: OOP244/NRA
-*
-* I declare that this assignment is my own work in accordance with the Seneca Academic
-* Policy. No part of this assignment has been copied manually or electronically from/to
-* any other source (including web sites) or distributed to other students.
-
-**************************************************************************************/
-
-
 /***********************************************************************
 // OOP244 Workshop 4 lab: tester program
 //
@@ -177,8 +161,6 @@ void displayRawAccountNumber(const Account* acc, int num) {
 void displayRawBalances(const Account* acc, int num) {
     cout << "Display raw balances of the accounts: " << endl;
     cout << " using double conversion operator" << endl;
-    cout.setf(ios::fixed);
-    cout.precision(2);
     for (int i = 0; i < num; i++) {
         cout << double(acc[i]) << " ";
     }
