@@ -132,7 +132,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Numbers.cpp" />
-    <ClCompile Include="Numders_prof.cpp" />
+    <ClCompile Include="Numbers_prof.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

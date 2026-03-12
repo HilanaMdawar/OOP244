@@ -25,14 +25,14 @@ namespace seneca {
         double* m_numbers;
         char* m_filename;
         bool m_isOriginal;
-        size_t m_numCount;
+        int m_numCount;   // changed from size_t to int
 
         bool isEmpty() const;
         void setEmpty();
         void setFilename(const char* filename);
         void sort();
 
-        size_t numberCount() const;
+        int numberCount() const;   // changed from size_t to int
         bool load();
         void save() const;
 

@@ -26,7 +26,7 @@
     <ClCompile Include="Numbers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Numders_prof.cpp">
+    <ClCompile Include="Numbers_prof.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

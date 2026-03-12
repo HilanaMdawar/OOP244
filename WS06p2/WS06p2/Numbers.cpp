@@ -14,6 +14,7 @@
 * provided to complete my workshops and assignments.
 *
 **************************************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -37,7 +38,7 @@ namespace seneca {
             m_numCount = src.m_numCount;
             m_numbers = new double[m_numCount];
 
-            for (size_t i = 0; i < m_numCount; i++) {
+            for (int i = 0; i < m_numCount; i++) {
                 m_numbers[i] = src.m_numbers[i];
             }
         }
@@ -54,7 +55,7 @@ namespace seneca {
                 m_numCount = src.m_numCount;
                 m_numbers = new double[m_numCount];
 
-                for (size_t i = 0; i < m_numCount; i++) {
+                for (int i = 0; i < m_numCount; i++) {
                     m_numbers[i] = src.m_numbers[i];
                 }
             }
@@ -66,10 +67,10 @@ namespace seneca {
         return *this;
     }
 
-    size_t Numbers::numberCount() const {
+    int Numbers::numberCount() const {
 
         ifstream file(m_filename);
-        size_t count = 0;
+        int count = 0;
         char ch;
 
         while (file.get(ch)) {
@@ -86,7 +87,7 @@ namespace seneca {
         ifstream file(m_filename);
         m_numbers = new double[m_numCount];
 
-        size_t i = 0;
+        int i = 0;
 
         while (file >> m_numbers[i]) {
             i++;
@@ -108,7 +109,7 @@ namespace seneca {
 
             ofstream file(m_filename);
 
-            for (size_t i = 0; i < m_numCount; i++) {
+            for (int i = 0; i < m_numCount; i++) {
                 file << m_numbers[i] << endl;
             }
         }
@@ -120,7 +121,7 @@ namespace seneca {
 
             double* temp = new double[m_numCount + 1];
 
-            for (size_t i = 0; i < m_numCount; i++) {
+            for (int i = 0; i < m_numCount; i++) {
                 temp[i] = m_numbers[i];
             }
 
@@ -155,7 +156,7 @@ namespace seneca {
             ostr.setf(ios::fixed);
             ostr.precision(2);
 
-            for (size_t i = 0; i < m_numCount; i++) {
+            for (int i = 0; i < m_numCount; i++) {
 
                 ostr << m_numbers[i];
 
