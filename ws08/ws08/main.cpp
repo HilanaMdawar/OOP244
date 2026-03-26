@@ -1,17 +1,19 @@
-/***********************************************************************
-// OOP244 Workshop 8 lab: tester program
-//
-// File	main.cpp
-// Version 1.0
-// Author	Fardad Soleimanloo
-// Description
-// DO NOT MODIFY THIS FILE
-// Revision History
-// -----------------------------------------------------------
-// Name            Date            Reason
-//
-/////////////////////////////////////////////////////////////////
-***********************************************************************/
+/*************************************************************************************
+* OOP244 - 2261
+*
+* Student Name :hilana mdawar
+* Student Email : hmdawar@myseneca.ca
+* Workshop #  :8
+* Course/Section: OOP244/NRA
+*
+* I declare that this assignment is my own work in accordance with the Seneca Academic
+* Policy. No part of this assignment has been copied manually or electronically from/to
+* any other source (including web sites) or distributed to other students.
+*
+* I have done all the coding by myself and only copied the code that my professor
+* provided to complete my workshops and assignments.
+*
+**************************************************************************************/
 #include <iostream>
 #include <fstream>
 #include "Shape.h"
