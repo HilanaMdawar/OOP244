@@ -12,45 +12,51 @@
 *
 * I have done all the coding by myself and only copied the code that my professor
 * provided to complete my workshops and assignments.
-*
+
 **************************************************************************************/
-#include "LblShape.h"
+#include <iostream>
 #include <cstring>
+#include "LblShape.h"
+
 using namespace std;
 
 namespace seneca {
 
-    const char* LblShape::label() const {
-        return m_label;
-    }
-
-    LblShape::LblShape() {
-        m_label = nullptr;
-    }
-
+    // Constructor
     LblShape::LblShape(const char* lbl) {
-        m_label = nullptr;
-        if (lbl) {
+        if (lbl != nullptr && lbl[0] != '\0') {
             m_label = new char[strlen(lbl) + 1];
-            strcpy_s(m_label, strlen(lbl) + 1, lbl);
+            strcpy(m_label, lbl);
+        }
+        else {
+            m_label = nullptr;
         }
     }
 
+    // Destructor
     LblShape::~LblShape() {
         delete[] m_label;
     }
 
-    void LblShape::getSpecs(istream& is) {
-        char temp[81];
-        is.getline(temp, 81, ',');
+    // Getter
+    const char* LblShape::label() const {
+        return m_label;
+    }
 
-        // 🔥 FIX: remove leading space if exists
-        int start = 0;
-        while (temp[start] == ' ') start++;
+    // getSpecs
+    void LblShape::getSpecs(istream& is) {
+        char temp[1001];
+
+        is.get(temp, 1000, ',');
+        is.ignore(1000, ',');
 
         delete[] m_label;
-        m_label = new char[strlen(temp + start) + 1];
-        strcpy_s(m_label, strlen(temp + start) + 1, temp + start);
+        m_label = nullptr;
+
+        if (temp[0] != '\0') {
+            m_label = new char[strlen(temp) + 1];
+            strcpy(m_label, temp);
+        }
     }
 
 }

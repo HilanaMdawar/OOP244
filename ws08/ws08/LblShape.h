@@ -15,25 +15,24 @@
 * provided to complete my workshops and assignments.
 *
 **************************************************************************************/
-#ifndef SENECA_LABELEDSHAPE_H
-#define SENECA_LABELEDSHAPE_H
+#ifndef SENECA_LBLSHAPE_H
+#define SENECA_LBLSHAPE_H
+
 #include "Shape.h"
 
 namespace seneca {
 
     class LblShape : public Shape {
-        char* m_label{};
+        char* m_label;
     protected:
+
         const char* label() const;
     public:
-        LblShape();
-        LblShape(const char* label);
+        LblShape(const char* lbl = nullptr);
         virtual ~LblShape();
-
-        LblShape(const LblShape&) = delete;
-        LblShape& operator=(const LblShape&) = delete;
-
         void getSpecs(std::istream& is);
     };
+
 }
+
 #endif
