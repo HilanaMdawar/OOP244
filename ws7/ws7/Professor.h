@@ -1,0 +1,42 @@
+/***********************************************************************
+// OOP244 Workshop 7 lab: Professor
+//
+// File  Professor.h
+//
+// Author: Hilana Mdawar
+//
+// Revision History
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+#ifndef SENECA_PROFESSOR_H
+#define SENECA_PROFESSOR_H
+
+#include <iostream>
+#include "Employee.h"
+
+namespace seneca {
+
+    class Professor : public Employee {
+        char* m_subject{};
+        int m_section{};
+        double m_devPay{};
+
+        void setDevPay();
+
+    public:
+        Professor();
+        Professor(const char* name, const char* subject, int section, size_t empNo, double salary);
+        ~Professor();
+
+        std::istream& read(std::istream& istr = std::cin);
+        std::ostream& write(std::ostream& ostr = std::cout) const;
+        std::ostream& title(std::ostream& ostr = std::cout) const;
+    };
+
+    // operators
+    std::ostream& operator<<(std::ostream& ostr, const Professor& P);
+    std::istream& operator>>(std::istream& istr, Professor& P);
+
+}
+
+#endif

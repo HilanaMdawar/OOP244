@@ -12,6 +12,7 @@
 *
 * I have done all the coding by myself and only copied the code that my professor
 * provided to complete my workshops and assignments.
+* i have also used chat gpt and co pilot in some sections because i was having a hard time understanding the requirements and how to implement them, but i have made sure to understand the code and how it works, and i have also made some modifications to the code to fit the requirements of the assignment.
 *
 **************************************************************************************/
 

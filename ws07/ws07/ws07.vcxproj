@@ -18,11 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="Professor.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Professor.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{02403aa5-8b04-4ee3-b3fc-facbf99fe7e1}</ProjectGuid>
-    <RootNamespace>ws06</RootNamespace>
+    <ProjectGuid>{e36fa6ba-b15d-45c2-aeed-72ea7d730985}</ProjectGuid>
+    <RootNamespace>ws07</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,14 +137,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Numbers.cpp" />
-    <ClCompile Include="Numbers_prof.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Numbers.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

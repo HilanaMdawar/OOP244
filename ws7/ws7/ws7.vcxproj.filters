@@ -15,19 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Numbers.cpp">
+    <ClInclude Include="Employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Professor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Employee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Numbers_prof.cpp">
+    <ClCompile Include="Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Professor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Numbers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <None Include="..\..\..\..\..\..\Users\Hilan\Downloads\professors.csv" />
   </ItemGroup>
 </Project>
